@@ -187,3 +187,49 @@ body {
   font-weight: 700;
   color: #ff7979;
 }
+
+@media all and (max-width: 971px) {
+  .box {
+    flex-direction: column;
+  }
+  .box__textbox {
+    text-align: center;
+  }
+}
+@media all and (max-width: 461px) {
+  .box {
+    gap: 6.4rem;
+  }
+  .box__title {
+    margin-bottom: 1.6rem;
+    font-size: 2.8rem;
+    letter-spacing: -0.291667px;
+    max-width: 32.7rem;
+  }
+  .box__description {
+    max-width: 32.7rem;
+  }
+  .box__formbox {
+    width: 100%;
+    max-width: 32.7rem;
+  }
+  .box__banner {
+    padding: 1.8rem 6.6rem;
+  }
+  .box__form {
+    padding: 2.4rem;
+  }
+  .box__inputs {
+    gap: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+  .box__inputform {
+    padding: 1.5rem 1.941rem;
+    letter-spacing: 0.25px;
+  }
+  .box__quiet {
+    line-height: 2.1rem;
+    max-width: 24.9rem;
+    margin: 0 auto;
+  }
+}
