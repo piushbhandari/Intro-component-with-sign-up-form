@@ -153,6 +153,9 @@ body {
 .active-error {
   border: 2px solid #ff7979;
 }
+.success {
+  border: 2px solid #3ef60c;
+}
 .active-error::placeholder {
   color: #ff7979;
 }
@@ -175,6 +178,10 @@ body {
   font-size: 1.5rem;
   line-height: 2.6rem;
   letter-spacing: 1px;
+}
+.box__cta:hover,
+.box__cta:focus {
+  background: #77e2b3;
 }
 .box__quiet {
   color: #bab7d4;
@@ -210,7 +217,6 @@ body {
     max-width: 32.7rem;
   }
   .box__formbox {
-    width: 100%;
     max-width: 32.7rem;
   }
   .box__banner {
