@@ -31,6 +31,7 @@ function validateText(input, val) {
     showError("Field cannot be empty fren", input);
   } else {
     input.classList.add("success");
+    input.classList.remove("active-error");
   }
   return valid;
 }
@@ -52,6 +53,7 @@ function validatePassword(input, val) {
     );
   } else {
     input.classList.add("success");
+    input.classList.remove("active-error");
   }
   return valid;
 }
@@ -66,6 +68,7 @@ function validateEmail(input, val) {
     showError("please provide a valid email address", input);
   } else {
     input.classList.add("success");
+    input.classList.remove("active-error");
   }
 
   return valid;
