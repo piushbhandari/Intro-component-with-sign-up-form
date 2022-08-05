@@ -66,6 +66,7 @@ body {
 .box__textbox {
   color: white;
   opacity: 1;
+  animation: slideInTop 1s;
 }
 .box__title {
   margin-bottom: 3.8rem;
@@ -84,6 +85,7 @@ body {
 .box__formbox {
   width: 100%;
   max-width: 54rem;
+  animation: slideInBottom 1s;
 }
 
 .box__banner {
@@ -237,5 +239,34 @@ body {
     line-height: 2.1rem;
     max-width: 24.9rem;
     margin: 0 auto;
+  }
+}
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-50rem);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(13rem);
+    opacity: 0.36;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(50rem);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-13rem);
+    opacity: 0.36;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
